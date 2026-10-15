@@ -1,0 +1,326 @@
+{
+  "schema_version": 1,
+  "project": {
+    "name": "示例 App · 开发工作台",
+    "current_stage": "开发与验证",
+    "updated_at": "2026-10-15T13:00:00+08:00",
+    "demo": true
+  },
+  "requirements": [
+    {
+      "id": "R-001",
+      "title": "创建与查看记录",
+      "scope": "演示范围：创建与查看记录",
+      "acceptance_criteria": [
+        "在约定条件下完成操作，结果符合本需求说明。"
+      ],
+      "confirmation": "已确认",
+      "cancelled": false
+    },
+    {
+      "id": "R-002",
+      "title": "导出记录",
+      "scope": "演示范围：导出记录",
+      "acceptance_criteria": [
+        "在约定条件下完成操作，结果符合本需求说明。"
+      ],
+      "confirmation": "已确认",
+      "cancelled": false
+    },
+    {
+      "id": "R-003",
+      "title": "云端同步",
+      "scope": "演示范围：云端同步",
+      "acceptance_criteria": [
+        "在约定条件下完成操作，结果符合本需求说明。"
+      ],
+      "confirmation": "待确认",
+      "cancelled": false
+    },
+    {
+      "id": "R-004",
+      "title": "旧版分享方案",
+      "scope": "演示范围：旧版分享方案",
+      "acceptance_criteria": [
+        "在约定条件下完成操作，结果符合本需求说明。"
+      ],
+      "confirmation": "已确认",
+      "cancelled": true
+    }
+  ],
+  "tasks": [
+    {
+      "id": "T-001",
+      "title": "创建记录并在列表查看",
+      "requirement_ids": [
+        "R-001"
+      ],
+      "stage": "核心功能",
+      "scope": "演示任务：创建记录并在列表查看。按功能闭环实现，并验证结果。",
+      "dependencies": [],
+      "status": "已完成",
+      "implemented": true,
+      "cancelled": false,
+      "acceptance_criteria": [
+        "操作后得到预期结果，失败时提供可理解的反馈。"
+      ],
+      "required_checks": [
+        "人工操作"
+      ],
+      "verification": [
+        {
+          "category": "人工操作",
+          "result": "通过",
+          "evidence": "演示依据：创建后列表出现对应记录。",
+          "checked_at": "2026-10-15T10:00:00+08:00"
+        }
+      ],
+      "acceptance_result": "通过",
+      "acceptance_evidence": "演示验收：需求列出的场景均通过。",
+      "blocked_reason": "",
+      "remaining_items": [],
+      "history": [
+        {
+          "at": "2026-10-15T10:00:00+08:00",
+          "status": "已完成",
+          "note": "演示：完成原始范围验收。"
+        }
+      ]
+    },
+    {
+      "id": "T-002",
+      "title": "记录编辑：已实现，待验证",
+      "requirement_ids": [
+        "R-001"
+      ],
+      "stage": "核心功能",
+      "scope": "演示任务：记录编辑：已实现，待验证。按功能闭环实现，并验证结果。",
+      "dependencies": [],
+      "status": "进行中",
+      "implemented": true,
+      "cancelled": false,
+      "acceptance_criteria": [
+        "操作后得到预期结果，失败时提供可理解的反馈。"
+      ],
+      "required_checks": [
+        "人工操作"
+      ],
+      "verification": [
+        {
+          "category": "人工操作",
+          "result": "待验证",
+          "evidence": "等待用户按约定检查编辑后内容。",
+          "checked_at": ""
+        }
+      ],
+      "acceptance_result": "待验证",
+      "acceptance_evidence": "",
+      "blocked_reason": "",
+      "remaining_items": [
+        "执行人工操作并记录实际结果。"
+      ],
+      "history": []
+    },
+    {
+      "id": "T-003",
+      "title": "导出功能：等待格式确认",
+      "requirement_ids": [
+        "R-002"
+      ],
+      "stage": "核心功能",
+      "scope": "演示任务：导出功能：等待格式确认。按功能闭环实现，并验证结果。",
+      "dependencies": [
+        "T-001"
+      ],
+      "status": "进行中",
+      "implemented": false,
+      "cancelled": false,
+      "acceptance_criteria": [
+        "操作后得到预期结果，失败时提供可理解的反馈。"
+      ],
+      "required_checks": [
+        "人工操作"
+      ],
+      "verification": [],
+      "acceptance_result": "待验证",
+      "acceptance_evidence": "",
+      "blocked_reason": "等待用户确认导出字段。",
+      "remaining_items": [],
+      "history": []
+    },
+    {
+      "id": "T-004",
+      "title": "导出失败时提供重试入口",
+      "requirement_ids": [
+        "R-002"
+      ],
+      "stage": "核心功能",
+      "scope": "演示任务：导出失败时提供重试入口。按功能闭环实现，并验证结果。",
+      "dependencies": [
+        "T-003"
+      ],
+      "status": "未开始",
+      "implemented": false,
+      "cancelled": false,
+      "acceptance_criteria": [
+        "操作后得到预期结果，失败时提供可理解的反馈。"
+      ],
+      "required_checks": [
+        "人工操作"
+      ],
+      "verification": [],
+      "acceptance_result": "待验证",
+      "acceptance_evidence": "",
+      "blocked_reason": "",
+      "remaining_items": [],
+      "history": []
+    },
+    {
+      "id": "T-005",
+      "title": "新增记录校验：变更后重新打开",
+      "requirement_ids": [
+        "R-001"
+      ],
+      "stage": "核心功能",
+      "scope": "演示长文本：根据新需求增加输入长度限制，同时保留已有记录的读取行为。根据新需求增加输入长度限制，同时保留已有记录的读取行为。根据新需求增加输入长度限制，同时保留已有记录的读取行为。根据新需求增加输入长度限制，同时保留已有记录的读取行为。根据新需求增加输入长度限制，同时保留已有记录的读取行为。根据新需求增加输入长度限制，同时保留已有记录的读取行为。根据新需求增加输入长度限制，同时保留已有记录的读取行为。根据新需求增加输入长度限制，同时保留已有记录的读取行为。根据新需求增加输入长度限制，同时保留已有记录的读取行为。根据新需求增加输入长度限制，同时保留已有记录的读取行为。",
+      "dependencies": [],
+      "status": "进行中",
+      "implemented": false,
+      "cancelled": false,
+      "acceptance_criteria": [
+        "操作后得到预期结果，失败时提供可理解的反馈。"
+      ],
+      "required_checks": [
+        "人工操作"
+      ],
+      "verification": [],
+      "acceptance_result": "待验证",
+      "acceptance_evidence": "",
+      "blocked_reason": "",
+      "remaining_items": [
+        "补充长度限制及对应验收。"
+      ],
+      "history": [
+        {
+          "at": "2026-10-14T10:00:00+08:00",
+          "status": "已完成",
+          "note": "演示：原版验收通过，人工检查空标题提示符合原标准。"
+        },
+        {
+          "at": "2026-10-15T11:00:00+08:00",
+          "status": "进行中",
+          "note": "C-002 已确认新增长度限制，重新打开任务；原验收结论仅适用于旧范围。"
+        }
+      ]
+    },
+    {
+      "id": "T-006",
+      "title": "草稿：云端同步",
+      "requirement_ids": [
+        "R-003"
+      ],
+      "stage": "核心功能",
+      "scope": "演示任务：草稿：云端同步。按功能闭环实现，并验证结果。",
+      "dependencies": [],
+      "status": "未开始",
+      "implemented": false,
+      "cancelled": false,
+      "acceptance_criteria": [
+        "操作后得到预期结果，失败时提供可理解的反馈。"
+      ],
+      "required_checks": [
+        "人工操作"
+      ],
+      "verification": [],
+      "acceptance_result": "待验证",
+      "acceptance_evidence": "",
+      "blocked_reason": "",
+      "remaining_items": [],
+      "history": []
+    },
+    {
+      "id": "T-007",
+      "title": "旧版分享入口",
+      "requirement_ids": [
+        "R-004"
+      ],
+      "stage": "核心功能",
+      "scope": "演示任务：旧版分享入口。按功能闭环实现，并验证结果。",
+      "dependencies": [],
+      "status": "未开始",
+      "implemented": false,
+      "cancelled": true,
+      "acceptance_criteria": [
+        "操作后得到预期结果，失败时提供可理解的反馈。"
+      ],
+      "required_checks": [
+        "人工操作"
+      ],
+      "verification": [],
+      "acceptance_result": "待验证",
+      "acceptance_evidence": "",
+      "blocked_reason": "",
+      "remaining_items": [],
+      "history": []
+    }
+  ],
+  "changes": [
+    {
+      "id": "C-001",
+      "type": "新增",
+      "confirmation": "已确认",
+      "at": "2026-10-15T09:00:00+08:00",
+      "summary": "演示：新增导出需求",
+      "reason": "用户确认需要导出；有效任务数量增加，完成率随范围调整。",
+      "requirement_ids": [
+        "R-002"
+      ],
+      "task_ids": [
+        "T-003",
+        "T-004"
+      ]
+    },
+    {
+      "id": "C-002",
+      "type": "修改",
+      "confirmation": "已确认",
+      "at": "2026-10-15T11:00:00+08:00",
+      "summary": "演示：新增输入长度限制",
+      "reason": "验收标准变化，T-005 重新打开，已完成数量减少。",
+      "requirement_ids": [
+        "R-001"
+      ],
+      "task_ids": [
+        "T-005"
+      ]
+    },
+    {
+      "id": "C-003",
+      "type": "取消",
+      "confirmation": "已确认",
+      "at": "2026-10-15T12:00:00+08:00",
+      "summary": "演示：取消旧版分享方案",
+      "reason": "范围缩减，历史保留且任务不计入分母。",
+      "requirement_ids": [
+        "R-004"
+      ],
+      "task_ids": [
+        "T-007"
+      ]
+    },
+    {
+      "id": "C-004",
+      "type": "新增",
+      "confirmation": "待确认",
+      "at": "2026-10-15T13:00:00+08:00",
+      "summary": "演示：云端同步草稿",
+      "reason": "尚未确认，不纳入正式任务。",
+      "requirement_ids": [
+        "R-003"
+      ],
+      "task_ids": [
+        "T-006"
+      ]
+    }
+  ]
+}

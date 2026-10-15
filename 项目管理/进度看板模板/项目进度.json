@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "project": {
+    "name": "待填写项目名称",
+    "current_stage": "需求与范围",
+    "updated_at": "待首次更新",
+    "demo": false
+  },
+  "requirements": [],
+  "tasks": [],
+  "changes": []
+}
