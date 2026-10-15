@@ -147,9 +147,10 @@ def generate(*, source, output):
 
 def main():
     root = Path(__file__).resolve().parent.parent
+    board_directory = root / '进度看板'
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--input', type=Path, default=root / '项目进度.json')
-    parser.add_argument('--output', type=Path, default=root / '开发进度看板.html')
+    parser.add_argument('--input', type=Path, default=board_directory / '项目进度.json')
+    parser.add_argument('--output', type=Path, default=board_directory / '开发进度看板.html')
     args = parser.parse_args()
     try:
         result = generate(source=args.input, output=args.output)
